@@ -25,8 +25,16 @@ public class ifelse8 {
         System.out.println("Введите 1 товар к покупке: ");
         String userChoice = scan.nextLine();
 
-        System.out.println("Введите ваш бюджет: ");
-        double cash = scan.nextDouble();
+        double cash = -1;
+        while (cash < 0) {
+            System.out.println("Введите ваш бюджет: ");
+            if (scan.hasNextDouble()) {
+                cash = scan.nextDouble();
+            } else {
+                System.out.println("Введено не число. Попробуйте снова.");
+                scan.next();
+            }
+        }
 
         double change = switch (userChoice) {
             case "Хлеб" -> cash - price1;
@@ -35,6 +43,7 @@ public class ifelse8 {
             default -> {
                 System.out.println("Товар не найден.");
                 System.exit(0);
+                yield 0;
             }
         };
 
@@ -45,5 +54,6 @@ public class ifelse8 {
         } else if (change < 0) {
             System.out.println("Денег не хватает!");
         }
+        scan.close();
     }
 }
