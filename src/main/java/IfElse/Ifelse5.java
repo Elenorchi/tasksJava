@@ -1,10 +1,10 @@
-package ifElse;
+package IfElse;
 
 //Пользователь вводит в консоли три числа, выводим самое большое из них.
 
 import java.util.Scanner;
 
-public class ifelse5 {
+public class Ifelse5 {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);

@@ -1,4 +1,4 @@
-package ifElse;
+package IfElse;
 
 //Программа “Магазин”, выводим меню из трех товаров с ценами. Пользователь выбирает
 //товар, вводит сумму денег. Если сумма меньше цены, выводим сообщение: “Денег не
@@ -7,7 +7,7 @@ package ifElse;
 
 import java.util.Scanner;
 
-public class ifelse8 {
+public class Ifelse8 {
     public static void main(String[] args) {
 
         double price1 = 2.2;

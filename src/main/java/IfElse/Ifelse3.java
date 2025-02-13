@@ -1,4 +1,4 @@
-package ifElse;
+package IfElse;
 
 //Пользователь вводит в консоли длины сторон треугольника (три числа), выводим
 //сообщение, является ли треугольник равнобедренным, равносторонним или
@@ -6,7 +6,7 @@ package ifElse;
 
 import java.util.Scanner;
 
-public class ifelse3 {
+public class Ifelse3 {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);

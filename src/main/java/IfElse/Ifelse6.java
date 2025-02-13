@@ -1,11 +1,11 @@
-package ifElse;
+package IfElse;
 
 //Пользователь вводит в консоли три числа. Рассчитываем и выводим в консоль сумму
 //наибольшего и наименьшего из них
 
 import java.util.Scanner;
 
-public class ifelse6 {
+public class Ifelse6 {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);

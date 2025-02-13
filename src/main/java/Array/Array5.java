@@ -7,23 +7,23 @@ package Array;
 public class Array5 {
     public static void main(String[] args) {
 
-        int[] arr = {1, 2, 2, 3, 3, 4};
-        int number = 0;
+        int[] nums = {1, 3, 3, 2, 2, 4};
+        int result = 0;
         int maxCount = 0;
 
-        for (int a : arr) {
+        for (int num : nums) {
             int count = 0;
 
-            for (int i = 0; i < arr.length; i++) {
-                if (a == arr[i]) {
+            for (int i = 0; i < nums.length; i++) {
+                if (num == nums[i]) {
                     count++;
                 }
             }
-            if (count > maxCount || (count == maxCount && number < a)) {
+            if (count > maxCount || (count == maxCount && result < num)) {
                 maxCount = count;
-                number = a;
+                result = num;
             }
         }
-        System.out.print(maxCount == 1 ? "Повторяющихся чисел нет." : "Максимальное часто встречающееся число: " + number);
+        System.out.print(maxCount == 1 ? "Повторяющихся чисел нет." : "Максимальное часто встречающееся число: " + result);
     }
 }
